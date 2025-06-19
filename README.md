@@ -59,23 +59,31 @@ res = requests.post("<YOUR_MODEL_ENDPOINT>", headers=headers, data=json.dumps(da
 
 label = 1 if res.json()["predictions"][0][0] > 0.5 else 0
 print("Prediction:", "Spam" if label else "Not Spam")
+```
 
-🚀 Optional MLOps Extensions
-Task	Status
-🧠 Bundle vectorizer + model with mlflow.pyfunc	🔄 Planned
-📉 Simulate model drift & trigger retraining	🔄 Planned
-🕒 Automate weekly retraining with Databricks Jobs	🔄 Planned
+## 🚀 Optional MLOps Extensions
 
-🛠️ Tech Stack
-Python, PyTorch, Scikit-learn
+| Task                                                   | Status   |
+|--------------------------------------------------------|----------|
+| 🧠 Bundle vectorizer + model with `mlflow.pyfunc`      | 🔄 Planned |
+| 📉 Simulate model drift & trigger retraining           | 🔄 Planned |
+| 🕒 Automate weekly retraining with Databricks Jobs     | 🔄 Planned |
 
-MLflow, Databricks (Free Edition)
+## 🛠️ Tech Stack
 
-HuggingFace Datasets
+- Python, PyTorch, Scikit-learn  
+- MLflow, Databricks (Free Edition)  
+- HuggingFace Datasets  
+- Requests (for API calling)
 
-Requests (for API)
+## 👨‍💻 Author
 
-🧑‍💻 Author
-Veeresh Pattanad
-AI/ML Undergraduate | Data Engineer Intern
-GitHub
+**Veeresh Pattanad**  
+AI/ML Undergraudate | Data Engineer Intern  
+🔗 [GitHub](https://github.com/veereshpattanad)
+
+
+
+
+
+
